@@ -59,7 +59,6 @@
 				    	<li><a href="#header">Home</a></li>
 				    	<li><a href="#services">Services</a></li>
 				    	<li><a href="#our-works">Works</a></li>
-				    	<li><a href="#pricing">Pricing</a></li>
 				    	<li><a href="#our-team">Team</a></li>
 				    	<li><a href="#contact">Contact</a></li>
 				    	<li><a href="blog.html">Blog</a></li>
@@ -128,9 +127,28 @@
 
 	<!--/萌新报名入口-->
 	<br><br/>
-	<button class="btn btn-primary btn-small" data-toggle="modal" data-target="#myModal" style="margin:0 auto;width:100%;height:100%;font-size: 30px">JOIN US！<br/>SIGN UP NOW！ </button>
+	<button class="btn btn-primary btn-small" data-toggle="modal" data-target="#myModal" style="margin:0 auto;width:100%;height:100%;font-size: 30px">JOIN US！<br/>SIGN IN NOW！ </button>
 	<!-- 模态框（Modal） -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<style type="text/css">
+	   input{
+                border: 1px solid #ccc;
+                padding: 7px 0px;
+                border-radius: 3px;
+                padding-left:5px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+            }
+            input:focus{
+                    border-color: #66afe9;
+                    outline: 0;
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+            }
+	</style>
 		<div class="modal-dialog">
 		
 			<div class="modal-content">
@@ -158,7 +176,7 @@
 							<select id="usex" name="userSex" style="width: 200px; height: 31px;" >
 							  <option value="">------plz choose------</option>
 							  <option value="male" style="font-weight:bold;">MALE</option>
-							  <option value="female" style="font-weight:bold;"">FEMALE</option>
+							  <option value="female" style="font-weight:bold;">FEMALE</option>
 							</select>
 						<br/>
 						<label for="uphone" style="font-weight: bold;">Phone Number : </label>
@@ -168,6 +186,10 @@
 						<label for="uphone" style="font-weight: bold;">E-mail : </label>
 						<br>
 							<input type="text" name="userEmail" id="uemail" style="width: 200px;font-weight:bold;"/> 
+						<br/>
+						<label for="ushow" style="font-weight: bold;">Show sth to us,yourself、homepages、hobbies、targets etc. : </label>
+						<br>
+							<input type="textarea" name="userShow" id="ushow" style="width: 550px;font-weight:bold;"/> 
 						<br/>
 						<br>
 						<input type="submit"  value="Finished" class="btn btn-primary btn-small"/>
@@ -180,6 +202,8 @@
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal -->
 	</div>
+
+
 	<!-- SERVICES -->
 	<section id="services">
 		<div class="container">
@@ -324,72 +348,6 @@
 		</div>
 	</section>
 	<!-- /OUR WORKS -->
-
-	
-	<!-- PRICING -->
-	<section id="pricing">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title">
-						<h1>Pricing</h1>
-						<span class="st-border"></span>
-					</div>
-				</div>
-
-				<div class="col-sm-4">
-					<div class="st-pricing text-center">
-						<h5>Basic</h5>
-						<h3>$39</h3>
-						<div class="st-border"></div>
-						<ul>
-							<li>Free Download</li>
-							<li>1000+ Softwear</li>
-							<li>Full Access</li>
-							<li>Free Update</li>
-							<li>Live Support</li>
-						</ul>
-						<a href="" class="btn btn-send">Sign Up</a>
-					</div>
-				</div>
-
-				<div class="col-sm-4">
-					<div class="st-pricing text-center">
-						<h5>Silver</h5>
-						<h3>$89</h3>
-						<div class="st-border"></div>
-						<ul>
-							<li>Free Download</li>
-							<li>1000+ Softwear</li>
-							<li>Full Access</li>
-							<li>Free Update</li>
-							<li>Live Support</li>
-						</ul>
-						<a href="" class="btn btn-send">Sign Up</a>
-					</div>
-				</div>
-
-				<div class="col-sm-4">
-					<div class="st-pricing text-center">
-						<h5>Gold</h5>
-						<h3>$209</h3>
-						<div class="st-border"></div>
-						<ul>
-							<li>Free Download</li>
-							<li>1000+ Softwear</li>
-							<li>Full Access</li>
-							<li>Free Update</li>
-							<li>Live Support</li>
-						</ul>
-						<a href="" class="btn btn-send">Sign Up</a>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- /PRICING -->
-
 
 	<!-- OUR TEAM -->
 	<section id="our-team">
@@ -564,25 +522,25 @@
 			<div class="row">
 				<div class="col-sm-6 col-md-3">
 					<div class="fun-fact text-center">
-						<h3><i class="fa fa-thumbs-o-up"></i> <span class="st-counter">365</span></h3>
+						<h3><i class="fa fa-thumbs-o-up"></i> <span class="st-counter">999</span></h3>
 						<p>Happy Clients</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="fun-fact text-center">
-						<h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter">73987</span></h3>
+						<h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter">9999</span></h3>
 						<p>Completed Projects</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="fun-fact text-center">
-						<h3><i class="fa fa-coffee"></i> <span class="st-counter">297345</span></h3>
+						<h3><i class="fa fa-coffee"></i> <span class="st-counter">99999</span></h3>
 						<p>Cups of Coffee</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="fun-fact text-center">
-						<h3><i class="fa fa-code"></i> <span class="st-counter">9823686</span></h3>
+						<h3><i class="fa fa-code"></i> <span class="st-counter">99999</span></h3>
 						<p>Lines of Code</p>
 					</div>
 				</div>
@@ -604,10 +562,10 @@
 				</div>
 				<div class="col-sm-4 contact-info">
 					<p class="contact-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatum dolorum, possimus tenetur pariatur officia, quo commodi autem doloribus vero rerum aspernatur quidem temporibus.</p>
-					<p class="st-address"><i class="fa fa-map-marker"></i> <strong>E71 8th Ave, New York NY 21001, US</strong></p>
-					<p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
-					<p class="st-email"><i class="fa fa-envelope-o"></i> <strong>email@yourdomain.com</strong></p>
-					<p class="st-website"><i class="fa fa-globe"></i> <strong>www.yourdomain.com</strong></p>
+					<p class="st-address"><i class="fa fa-map-marker"></i> <strong>IT College,NJFU</strong></p>
+					<p class="st-phone"><i class="fa fa-mobile"></i> <strong>+86 </strong></p>
+					<p class="st-email"><i class="fa fa-envelope-o"></i> <strong>yunhuan15@gmail.com</strong></p>
+					<p class="st-website"><i class="fa fa-globe"></i> <strong>acm.njfu.edu.cn</strong></p>
 				
 				</div>
 				<div class="col-sm-7 col-sm-offset-1">

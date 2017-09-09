@@ -8,10 +8,10 @@ $userName = $_POST[userName];
 $userSex = $_POST[userSex];
 $userPhone = $_POST[userPhone];
 $userEmail = $_POST[userEmail];
-
+$userShow = $_POST[userShow];
 if($userId != null){
 	include 'connection.php';
-	$sql = "insert into ".$table_name." (user_id,user_name,user_sex,user_phone,user_email)  values('$userId','$userName','$userSex','$userPhone','$userEmail')";
+	$sql = "insert into ".$table_name." (user_id,user_name,user_sex,user_phone,user_email,user_show)  values('$userId','$userName','$userSex','$userPhone','$userEmail','$userShow')";
 
 	if (!mysql_query($sql))
 	{
