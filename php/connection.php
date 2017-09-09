@@ -15,6 +15,5 @@
 	{
 	  	die ("Can't use warehousedb : " . mysql_error());
 	}
-	echo "success";
 	mysql_query("set names 'utf8'");
 ?>
