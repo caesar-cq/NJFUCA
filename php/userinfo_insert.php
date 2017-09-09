@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <?php
 error_reporting(0);
-//echo $_POST["stuffId"]; 
+//获取莫态框表单数据
 $userId = $_POST[userId];
 $userName = $_POST[userName];
 $userSex = $_POST[userSex];
