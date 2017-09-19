@@ -41,7 +41,7 @@ body{
         width:100%;
         height:400px;
         background:black;
-        /*color: #00FF00;*/
+        color: #00FF00;
         font-family:courier;
     }    
     blink{
@@ -61,23 +61,10 @@ body{
             stringLength = inputText.length;
         }
         var initString = document.getElementById('myContent').innerHTML;
-        // initString = initString.replace(/<SPAN.*$/gi,"");
-        
         var theChar = inputText.charAt(charIndex);
-        // var nextFourChars = inputText.substr(charIndex,4);
-        // if(nextFourChars=='<BR>' || nextFourChars=='<br>'){
-        //     theChar  = '<BR>';
-        //     charIndex+=3;
-        // }
         initString = initString + theChar;// + "<SPAN id='blink'>_</SPAN>";
         document.getElementById('myContent').innerHTML = initString;
-        charIndex = charIndex/1 +1;
-// if(charIndex%2==1){
-//              document.getElementById('blink').style.display='none';
-//         }else{
-//              document.getElementById('blink').style.display='inline';
-//         }
-                
+        charIndex = charIndex/1 +1;              
         if(charIndex<=stringLength){
             setTimeout('writeContent(false)',150);
         }else{
@@ -143,7 +130,7 @@ body{
 	<section id="slider">
 		<div id="home-carousel" class="carousel slide" data-ride="carousel">			
 			<div class="carousel-inner">
-				<div class="item active" style="background-image: url(images/slider/01.jpg)">
+				<div class="item active" style="background-image: url(images/slider/07.jpg)">
 					<div class="carousel-caption container">
 						<div class="row">
 							<div class="col-sm-7">
@@ -154,7 +141,7 @@ body{
 						</div>
 					</div>					
 				</div>
-				<div class="item" style="background-image: url(images/slider/02.jpg)">
+				<div class="item" style="background-image: url(images/slider/05.jpg)">
 					<div class="carousel-caption container">
 						<div class="row">
 							<div class="col-sm-7">
@@ -165,7 +152,7 @@ body{
 						</div>
 					</div>					
 				</div>
-				<div class="item" style="background-image: url(images/slider/03.jpg)">
+				<div class="item" style="background-image: url(images/slider/06.jpg)">
 					<div class="carousel-caption container">
 						<div class="row">
 							<div class="col-sm-7">
@@ -176,7 +163,7 @@ body{
 						</div>
 					</div>					
 				</div>
-				<div class="item" style="background-image: url(images/slider/04.jpg)">
+				<div class="item" style="background-image: url(images/slider/02.jpg)">
 					<div class="carousel-caption container">
 						<div class="row">
 							<div class="col-sm-7">
@@ -202,25 +189,25 @@ body{
 						<h1>show</h1>
 						<span class="st-border"></span>
 					</div>
-		<pre class="hljs javascript" id="myContent"><code class="c++"><span></span>int getphi(int p){
-	int phi = p, m = p, k = 2;
-	while (k * k <=m) {
-		if (m % k == 0) {
-			phi /= k;
-			phi *= (k-1);
-			while (m % k == 0)
-				m /= k;
-		}
-		++k;
-	}
-	if (m != 1) {
-		phi /= m;
-		phi *= (m-1);
-	}
-	return phi;
-}</code></pre>
+		<pre class="hljs javascript" id="myContent"><code class="c++"></code></pre>
 		<div  id="contentToWrite" style="display:none;">
-hello world
+			int getphi(int p){
+			int phi = p, m = p, k = 2;
+			while (k * k <=m) {
+				if (m % k == 0) {
+					phi /= k;
+					phi *= (k-1);
+					while (m % k == 0)
+						m /= k;
+				}
+				++k;
+			}
+			if (m != 1) {
+				phi /= m;
+				phi *= (m-1);
+			}
+			return phi;
+		}
 		</div>
 		<script type="text/javascript">
 		writeContent(true);
@@ -554,9 +541,13 @@ hello world
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="about-us text-center">
-						<h4>Morem ipsum dolor sit amet.</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aliquid obcaecati deleniti minus quisquam quis magnam reprehenderit quaerat molestias rerum, excepturi autem fugiat corporis quidem a ipsum quos beatae! Ut!</p>
-						<a href="" class="btn btn-send">View More</a>
+						<h4>Online Judge System</h4>
+						<p><a href="http://acm.split.hdu.edu.cn/">Welcome to HDU Online Judge </a></br>
+						<a href="https://leetcode.com/">LeetCode.com</a></br>
+						<a href="http://bestcoder.hdu.edu.cn/">Bestcoder</a></br>
+						<a href="http://codeforces.com/">CodeForce</a></br></p>
+						<a href="http://acm.njfu.edu.cn">NJFU Online Judge</a></br>
+						<a href="http://acm.njfu.edu.cn" class="btn btn-send">View More</a>
 					</div>
 				</div>
 				<div class="col-sm-6 our-office">
